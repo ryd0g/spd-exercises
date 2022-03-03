@@ -10,3 +10,8 @@ from ..carbon_dating import get_age_carbon_14_dating
 # Add the necessary logic to make sure the function handle
 # every possible input properly. Then write a unit test againt
 # this special case.
+
+def test_age_carbon():
+    assert get_age_carbon_14_dating(0.35) == 8680.34
+    assert get_age_carbon_14_dating(0) == None
+    assert get_age_carbon_14_dating(-1) == None
